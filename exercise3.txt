@@ -1,0 +1,94 @@
+1. made new repo test_project and two local folders
+   using mkdir
+
+2. cd project1
+   git init
+   git remote add origin <link>
+
+3. git checkout -b staging
+
+4. added file test1.txt in folder1 with this is first commit
+
+5. commit and pushed
+   git add .
+   git commit -m "first commit"
+   git push origin staging
+
+6. cd /
+   cd project2
+
+7. git clone <link>
+
+8. git checkout staging 
+
+9. changed text in test1 of project2 to this is second commit
+
+10. git add .
+    git commit -m "second commit"
+    git push origin staging
+
+11. cd / project1 
+
+12. git checkout staging
+ 
+13. change in file test1 "this is third commit"
+
+14. git add .
+    git commit -m "third commit"
+    git push origin staging
+    
+    got error stating that we need to get a pull before pushing to remote as
+    remote is a commit forward
+
+15. git checkout -b master
+    
+16. as master do not present in start it directly merged with staging
+
+17. git checkout -b testing
+
+18. changed test1 to "A is an alphabet"
+    git add .
+    git commit -m "A"
+
+19. repeat 7 times 
+    7th commit was 
+    git commit -m "G"
+
+20. git push origin testing
+
+21. git checkout master
+
+22. change test1 text to "1 is a number"
+    git add .
+    git commit -m "1"
+23. 7 more commits till 7 is a number
+    
+24. git push origin master
+
+25. git rebase testing
+    it will show merge conflicts 7 time which need to be resolved
+    
+26. cd /project2
+
+27. git fetch origin testing
+    git branch testing -t origin/testing
+
+28. git fetch origin master
+    git branch master -t origin/master
+
+29. git checkout master
+    git merge testing
+    
+    resolve conflicts 
+    git add .
+    git merge --continue
+
+30. in rebase master have commits of testing without having merge commit.
+    in merge , master points to merged commit of two branches.
+
+    
+    
+     
+    
+    
+    
