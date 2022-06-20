@@ -83,8 +83,8 @@
     git add .
     git merge --continue
 
-30. in rebase master have commits of testing without having merge commit.
-    in merge , master points to merged commit of two branches.
+30. Testing branch is used to test or add a new feature and when its works complete then merge it with master.
+    Master contains all final code at end.
 
     
     
